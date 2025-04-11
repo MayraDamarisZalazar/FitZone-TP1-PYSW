@@ -467,93 +467,93 @@
   }
   
   
-  /* ==================== ESTILOS PARA ENTRENADORES.HTML ==================== */
-  
-  .entrenadores {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .entrenador-card {
-    background-color: var(--gray);
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .entrenador-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .entrenador-card img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  .entrenador-card h3 {
-    margin: 0.5rem 0;
-    color: var(--primary);
-  }
-  
-  .entrenador-card p {
-    font-size: 0.95rem;
-    color: #333;
-  }
+/* ==================== ESTILOS PARA ENTRENADORES.HTML ==================== */
 
-  .barra {
-    background-color: #ccc;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 12px;
-    margin-bottom: 1rem;
-  }
-  
-  .barra span {
-    display: block;
-    height: 100%;
-    background-color: #ff4500;
-    border-radius: 20px;
-  }  
-  
-  .valoracion {
-    direction: rtl; /* De derecha a izquierda */
-    display: inline-flex;
-    justify-content: center;
-    gap: 5px;
-  }
-  
-  .valoracion input {
-    display: none;
-  }
-  
-  .valoracion label {
-    font-size: 1.5rem;
-    color: #ccc;
-    cursor: pointer;
-    transition: transform 0.3s, color 0.3s;
-    position: relative;
-  }
-  
-  .valoracion label::before {
-    content: "★";
-    position: relative;
-    display: inline-block;
-  }
-  
-  .valoracion label:hover,
-  .valoracion label:hover ~ label,
-  .valoracion input:checked ~ label {
-    color: gold;
-    transform: scale(1.2);
-  }
-  
+.entrenadores{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 2rem;
+  padding: 2rem;
+}
 
-/* ------------------ CONTACTO ------------------ */
+.entrenador-card{
+  background-color: var(--gray);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.entrenador-card:hover {
+transform: scale(1.05);
+}
+
+.entrenador-card img {
+width: 100%;
+max-width: 200px;
+border-radius: 50%;
+margin-bottom: 1rem;
+}
+
+.entrenador-card h3 {
+margin: 0.5rem 0;
+color: var(--primary);
+}
+
+.entrenador-card p {
+font-size: 0.95rem;
+color: #333;
+}
+
+.barra {
+background-color: #ccc;
+border-radius: 20px;
+overflow: hidden;
+height: 12px;
+margin-bottom: 1rem;
+}
+
+.barra span {
+display: block;
+height: 100%;
+background-color: #ff4500;
+border-radius: 20px;
+}  
+
+.valoracion {
+direction: rtl; /* De derecha a izquierda */
+display: inline-flex;
+justify-content: center;
+gap: 5px;
+}
+
+.valoracion input {
+display: none;
+}
+
+.valoracion label {
+font-size: 1.5rem;
+color: #ccc;
+cursor: pointer;
+transition: transform 0.3s, color 0.3s;
+position: relative;
+}
+
+.valoracion label::before {
+content: "★";
+position: relative;
+display: inline-block;
+}
+
+.valoracion label:hover,
+.valoracion label:hover ~ label,
+.valoracion input:checked ~ label {
+color: gold;
+transform: scale(1.2);
+}
+
+
+/*-------- CONTACTO ------------------ */
 
 .contacto {
     padding: 2rem;
