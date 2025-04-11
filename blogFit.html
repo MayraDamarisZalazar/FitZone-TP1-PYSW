@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <title>TP1 PYSW Zalazar Mayra</title>
+</head>
+<body>
+  <header>
+    <img src="img/Logo.png" alt="Logo FitZone" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#" class="active">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="titulo-seccion">
+    <h2>Blog de Fitness</h2>
+    <p>Leé artículos sobre entrenamiento, nutrición y motivación para potenciar tu bienestar</p>
+  </section>
+
+  <section class="blog-fitness">
+
+    <!-- Inputs de filtro -->
+    <input type="radio" name="tag" id="all" checked>
+    <input type="radio" name="tag" id="nutricion">
+    <input type="radio" name="tag" id="entrenamiento">
+    <input type="radio" name="tag" id="motivacion">
+  
+    <!-- Filtros -->
+    <div class="filters">
+      <label for="all">Todos</label>
+      <label for="nutricion">Nutrición</label>
+      <label for="entrenamiento">Entrenamiento</label>
+      <label for="motivacion">Motivación</label>
+    </div>
+  
+    <!-- Blog -->
+    <section class="blog">
+  
+      <div class="grid-container">
+  
+        <article class="post scroll-reveal" data-tag="nutricion">
+          <h3>Top 5 snacks post entrenamiento</h3>
+          <p>Reponé energías con estos snacks fáciles y saludables.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="entrenamiento">
+          <h3>Entrenamiento funcional para todos</h3>
+          <p>Una guía rápida para empezar sin importar tu nivel.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="motivacion">
+          <h3>Motivación en 3 pasos</h3>
+          <p>¿Perdiste la constancia? Te ayudamos a recuperarla.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="nutricion">
+          <h3>¿Cómo hidratarte correctamente?</h3>
+          <p>La hidratación es clave, ¡acá te contamos por qué!</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="entrenamiento">
+          <h3>HIIT para quemar grasa</h3>
+          <p>Una rutina intensa para aprovechar al máximo tu tiempo.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="motivacion">
+          <h3>Historias reales: De sedentario a maratonista</h3>
+          <p>El viaje inspirador de Pedro, uno de nuestros socios.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="nutricion">
+          <h3>Desayunos energéticos para arrancar el día</h3>
+          <p>Ideas nutritivas que te llenan de energía desde la mañana.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="entrenamiento">
+          <h3>Rutina de fuerza en casa</h3>
+          <p>Entrená sin equipamiento con estos ejercicios efectivos.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="motivacion">
+          <h3>Mantras para entrenar</h3>
+          <p>Frases poderosas que te motivan cuando querés abandonar.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="nutricion">
+          <h3>Suplementos: ¿cuáles sí y cuáles no?</h3>
+          <p>Todo lo que necesitás saber antes de suplementarte.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="entrenamiento">
+          <h3>Stretching diario para prevenir lesiones</h3>
+          <p>Una guía rápida de estiramientos post-entreno.</p>
+        </article>
+  
+        <article class="post scroll-reveal" data-tag="motivacion">
+          <h3>Cómo retomar el ritmo después de un parate</h3>
+          <p>Tips para volver a entrenar con ganas y sin frustrarte.</p>
+        </article>
+  
+      </div>
+    </section>
+  </section>
+  
+
+  <!-- Comentarios -->
+  <section class="comentarios">
+    <h3>Comentarios</h3>
+    
+    <div class="comentario">
+      <div class="avatar"></div>
+      <div class="texto">
+        <strong>Sofi:</strong> ¡Me encantó el post sobre HIIT! Lo estoy probando esta semana.
+      </div>
+    </div>
+    
+    <div class="comentario">
+      <div class="avatar"></div>
+      <div class="texto">
+        <strong>Martín:</strong> La parte de hidratación es re útil, no sabía esos datos.
+      </div>
+    </div>
+    
+    <div class="comentario">
+      <div class="avatar"></div>
+      <div class="texto">
+        <strong>Carla:</strong> La historia de Pedro me emocionó. ¡Gracias por compartir!
+      </div>
+    </div>
+
+    <div class="comentario">
+        <div class="avatar"></div>
+        <div class="texto">
+          <strong>Lucas:</strong> Los estiramientos me salvaron de una lesión. ¡Gracias!
+        </div>
+    </div>
+      
+    <div class="comentario">
+        <div class="avatar"></div>
+        <div class="texto">
+          <strong>Vale:</strong> Amo los desayunos energéticos, ¡más recetas, por favor!
+        </div>
+    </div>
+      
+  </section>
+
+  <div class="mapa">
+    <h3>Encontranos aquí</h3>
+    <iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    <div class="container">
+          
+    <div>
+      <h3>Suscribite a nuestro newsletter</h3>
+        <form>
+          <input type="email" placeholder="Tu email..." required>
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
+      
+    <div>
+      <h3>Seguinos</h3>
+        <div class="redes">
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.tiktok.com/">TikTok</a>
+      </div>
+    </div>
+      
+    <div class="copyright">
+      © 2025 FitZone. Todos los derechos reservados.
+    </div>
+    </div> 
+  </footer>                
+
+  <script>
+    const posts = document.querySelectorAll('.scroll-reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    posts.forEach(post => observer.observe(post));
+  </script>
+</body>
+</html>

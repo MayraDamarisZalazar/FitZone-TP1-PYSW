@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <title>TP1 PYSW Zalazar Mayra</title>
+</head>
+<body>
+  <header>
+    <img src="img/Logo.png" alt="Logo FitZone" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="clases.html">Clases</a></li>
+        <li><a href="entrenadores.html">Entrenadores</a></li>
+        <li><a href="#" class="active"">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blogFit.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="precios">
+    <h2>Compará nuestros planes</h2>
+  
+    <div class="toggle-container">
+        <label class="toggle-label">
+          <input type="checkbox" id="toggle-precio">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-text">Mensual / Anual</span>
+  </div>
+        
+    <!-- Tabla de precios -->
+    <div class="tabla-precios">
+      <div class="plan">
+        <h3>Básico</h3>
+        <p class="precio" data-mensual="$10.000" data-anual="$110.000">$10.000</p>
+        <ul>
+          <li>Acceso al gimnasio</li>
+          <li><span class="tooltip">2 clases semanal<span class="tooltip-text">Incluye una clase grupal a elección</span></span></li>
+          <li><span class="tooltip">Soporte online<span class="tooltip-text">Consulta con entrenadores vía chat</span></span></li>
+        </ul>
+        <button>Elegir</button>
+      </div>
+  
+      <div class="plan destacado">
+        <h3>Premium</h3>
+        <p class="precio" data-mensual="$25.000" data-anual="$250.000">$25.000</p>
+        <ul>
+          <li>Acceso ilimitado</li>
+          <li><span class="tooltip">Clases ilimitadas<span class="tooltip-text">Yoga, HIIT, CrossFit y más</span></span></li>
+          <li><span class="tooltip">Asesoramiento personalizado<span class="tooltip-text">Rutina y seguimiento individual</span></span></li>
+        </ul>
+        <button>Elegir</button>
+      </div>
+  
+      <div class="plan">
+        <h3>Elite</h3>
+        <p class="precio" data-mensual="$35.000" data-anual="$350.000">$35.000</p>
+        <ul>
+          <li>Acceso 24/7</li>
+          <li><span class="tooltip">Clases VIP<span class="tooltip-text">Grupos reducidos con entrenadores senior</span></span></li>
+          <li><span class="tooltip">Nutrición incluida<span class="tooltip-text">Plan mensual con nutricionista</span></span></li>
+        </ul>
+        <button>Elegir</button>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const toggle = document.getElementById('toggle-precio');
+    const precios = document.querySelectorAll('.precio');
+  
+    toggle.addEventListener('change', () => {
+      precios.forEach(precio => {
+        const nuevoPrecio = toggle.checked ? precio.dataset.anual : precio.dataset.mensual;
+        precio.textContent = nuevoPrecio;
+      });
+    });
+  </script>  
+
+  <div class="mapa">
+    <h3>Encontranos aquí</h3>
+    <iframe src="https://www.google.com/maps/embed?..." allowfullscreen></iframe>
+  </div>
+
+  <footer>
+    <div class="container">
+          
+    <div>
+      <h3>Suscribite a nuestro newsletter</h3>
+        <form>
+          <input type="email" placeholder="Tu email..." required>
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
+      
+    <div>
+      <h3>Seguinos</h3>
+        <div class="redes">
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.tiktok.com/">TikTok</a>
+      </div>
+    </div>
+      
+    <div class="copyright">
+      © 2025 FitZone. Todos los derechos reservados.
+    </div>
+    </div> 
+  </footer>                
+
+  <script src="slide.js"></script>
+</body>
+</html>
